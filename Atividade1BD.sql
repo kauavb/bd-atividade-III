@@ -18,19 +18,19 @@ CREATE TABLE Funcionarios(
 );
 
 INSERT INTO ATVBD.Departamento(NomeDoDepartamento)
-VALUES ('Tecnologia da Informação');
+VALUES ('Informatica');
 INSERT INTO ATVBD.Departamento(NomeDoDepartamento)
-VALUES ('Engenharia');
+VALUES ('Engenharia e Construcao');
 INSERT INTO ATVBD.Departamento(NomeDoDepartamento)
 VALUES ('Administração');
 
 INSERT INTO ATVBD.Funcionarios(nome, dataNascimento, Cargo, DepartID)
-VALUES('Rodrigo Farra','12/11/2000' ,'Finanças', 3),
-('Jorge Amado','05/02/1989' , 'Desenvolvedor Sênior', 1),
-('Mariluce Pereira','26/07/1999' , 'Engenheira', 2),
-('Mercedes Junior','18/01/2002' , 'Desenvolvedor Junior', 1),
-('Carlos Araujo','10/06/2000' , 'Logística', 3),
-('Amyy Maravilhosa','20/10/1987' , 'Gerente', 3);
+VALUES('Julio Neto','18/01/2000' ,'RH', 3),
+('Julia Braga','05/02/2001' , 'HELPDESK', 1),
+('Mourice Chagas','26/09/1980' , 'Engenheira Civil', 2),
+('Bragas Cargo','11/01/2000' , 'Desenvolvedor Junior', 1),
+('Carla Flora','05/01/1999' , 'Logística', 3),
+('Maria Lu','20/10/1988' , 'Coordenadora', 3);
 
 CREATE VIEW vw_funcionarios_departamento AS 
 SELECT  F.nome AS 'Nome do Funcionario', 
